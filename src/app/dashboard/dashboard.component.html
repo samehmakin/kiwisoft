@@ -1,415 +1,58 @@
 <div class="main-content">
   <div class="container-fluid">
-      <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                  <div class="card-header card-header-warning card-header-icon">
-                      <div class="card-icon">
-                          <i class="material-icons">content_copy</i>
-                      </div>
-                      <p class="card-category">Used Space</p>
-                      <h3 class="card-title">49/50
-                          <small>GB</small>
-                      </h3>
-                  </div>
-                  <div class="card-footer">
-                      <div class="stats">
-                          <i class="material-icons text-danger">warning</i>
-                          <a href="javascript:void(0)">Get More Space...</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                  <div class="card-header card-header-success card-header-icon">
-                      <div class="card-icon">
-                          <i class="material-icons">store</i>
-                      </div>
-                      <p class="card-category">Revenue</p>
-                      <h3 class="card-title">$34,245</h3>
-                  </div>
-                  <div class="card-footer">
-                      <div class="stats">
-                          <i class="material-icons">date_range</i> Last 24 Hours
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                  <div class="card-header card-header-danger card-header-icon">
-                      <div class="card-icon">
-                          <i class="material-icons">info_outline</i>
-                      </div>
-                      <p class="card-category">Fixed Issues</p>
-                      <h3 class="card-title">75</h3>
-                  </div>
-                  <div class="card-footer">
-                      <div class="stats">
-                          <i class="material-icons">local_offer</i> Tracked from Github
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                  <div class="card-header card-header-info card-header-icon">
-                      <div class="card-icon">
-                          <i class="fa fa-twitter"></i>
-                      </div>
-                      <p class="card-category">Followers</p>
-                      <h3 class="card-title">+245</h3>
-                  </div>
-                  <div class="card-footer">
-                      <div class="stats">
-                          <i class="material-icons">update</i> Just Updated
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <div class="card card-chart">
-                  <div class="card-header card-header-success">
-                      <div class="ct-chart" id="dailySalesChart"></div>
-                  </div>
-                  <div class="card-body">
-                      <h4 class="card-title">Daily Sales</h4>
-                      <p class="card-category">
-                          <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
-                  </div>
-                  <div class="card-footer">
-                      <div class="stats">
-                          <i class="material-icons">access_time</i> updated 4 minutes ago
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card card-chart">
-                  <div class="card-header card-header-warning">
-                      <div class="ct-chart" id="websiteViewsChart"></div>
-                  </div>
-                  <div class="card-body">
-                      <h4 class="card-title">Email Subscriptions</h4>
-                      <p class="card-category">Last Campaign Performance</p>
-                  </div>
-                  <div class="card-footer">
-                      <div class="stats">
-                          <i class="material-icons">access_time</i> campaign sent 2 days ago
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card card-chart">
-                  <div class="card-header card-header-danger">
-                      <div class="ct-chart" id="completedTasksChart"></div>
-                  </div>
-                  <div class="card-body">
-                      <h4 class="card-title">Completed Tasks</h4>
-                      <p class="card-category">Last Campaign Performance</p>
-                  </div>
-                  <div class="card-footer">
-                      <div class="stats">
-                          <i class="material-icons">access_time</i> campaign sent 2 days ago
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-lg-6 col-md-12">
-              <div class="card">
-                  <div class="card-header card-header-tabs card-header-primary">
-                      <div class="nav-tabs-navigation">
-                          <div class="nav-tabs-wrapper">
-                              <span class="nav-tabs-title">Tasks:</span>
-                              <ul class="nav nav-tabs" data-tabs="tabs">
-                                  <li class="nav-item">
-                                      <a mat-button class="nav-link active" href="#profile" data-toggle="tab">
-                                          <i class="material-icons">bug_report</i> Bugs
-                                          <div class="ripple-container"></div>
-                                      </a>
-                                  </li>
-                                  <li class="nav-item">
-                                      <a mat-button class="nav-link" href="#messages" data-toggle="tab">
-                                          <i class="material-icons">code</i> Website
-                                          <div class="ripple-container"></div>
-                                      </a>
-                                  </li>
-                                  <li class="nav-item">
-                                      <a mat-button class="nav-link" href="#settings" data-toggle="tab">
-                                          <i class="material-icons">cloud</i> Server
-                                          <div class="ripple-container"></div>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="card-body">
-                      <div class="tab-content">
-                          <div class="tab-pane active" id="profile">
-                              <table class="table">
-                                  <tbody>
-                                      <tr>
-                                          <td>
-                                              <div class="form-check">
-                                                  <label class="form-check-label">
-                                                      <input class="form-check-input" type="checkbox" value="" checked>
-                                                      <span class="form-check-sign">
-                                                          <span class="check"></span>
-                                                      </span>
-                                                  </label>
-                                              </div>
-                                          </td>
-                                          <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                          <td class="td-actions text-right">
-                                              <button mat-raised-button type="button" matTooltip="Edit Task" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">edit</i>
-                                              </button>
-                                              <button mat-raised-button type="button" matTooltip="Remove" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">close</i>
-                                              </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="form-check">
-                                                  <label class="form-check-label">
-                                                      <input class="form-check-input" type="checkbox" value="">
-                                                      <span class="form-check-sign">
-                                                          <span class="check"></span>
-                                                      </span>
-                                                  </label>
-                                              </div>
-                                          </td>
-                                          <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                          <td class="td-actions text-right">
-                                              <button mat-raised-button type="button" matTooltip="Edit Task" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">edit</i>
-                                              </button>
-                                              <button mat-raised-button type="button" matTooltip="Remove" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">close</i>
-                                              </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="form-check">
-                                                  <label class="form-check-label">
-                                                      <input class="form-check-input" type="checkbox" value="">
-                                                      <span class="form-check-sign">
-                                                          <span class="check"></span>
-                                                      </span>
-                                                  </label>
-                                              </div>
-                                          </td>
-                                          <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
-                                          </td>
-                                          <td class="td-actions text-right">
-                                              <button mat-raised-button type="button" matTooltip="Edit Task" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">edit</i>
-                                              </button>
-                                              <button mat-raised-button type="button" matTooltip="Remove" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">close</i>
-                                              </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="form-check">
-                                                  <label class="form-check-label">
-                                                      <input class="form-check-input" type="checkbox" value="" checked>
-                                                      <span class="form-check-sign">
-                                                          <span class="check"></span>
-                                                      </span>
-                                                  </label>
-                                              </div>
-                                          </td>
-                                          <td>Create 4 Invisible User Experiences you Never Knew About</td>
-                                          <td class="td-actions text-right">
-                                              <button mat-raised-button type="button" matTooltip="Edit Task" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">edit</i>
-                                              </button>
-                                              <button mat-raised-button type="button" matTooltip="Remove" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">close</i>
-                                              </button>
-                                          </td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                          </div>
-                          <div class="tab-pane" id="messages">
-                              <table class="table">
-                                  <tbody>
-                                      <tr>
-                                          <td>
-                                              <div class="form-check">
-                                                  <label class="form-check-label">
-                                                      <input class="form-check-input" type="checkbox" value="" checked>
-                                                      <span class="form-check-sign">
-                                                          <span class="check"></span>
-                                                      </span>
-                                                  </label>
-                                              </div>
-                                          </td>
-                                          <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
-                                          </td>
-                                          <td class="td-actions text-right">
-                                              <button mat-raised-button type="button" matTooltip="Edit Task" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">edit</i>
-                                              </button>
-                                              <button mat-raised-button type="button" matTooltip="Remove" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">close</i>
-                                              </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="form-check">
-                                                  <label class="form-check-label">
-                                                      <input class="form-check-input" type="checkbox" value="">
-                                                      <span class="form-check-sign">
-                                                          <span class="check"></span>
-                                                      </span>
-                                                  </label>
-                                              </div>
-                                          </td>
-                                          <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                          <td class="td-actions text-right">
-                                              <button mat-raised-button type="button" matTooltip="Edit Task" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">edit</i>
-                                              </button>
-                                              <button mat-raised-button type="button" matTooltip="Remove" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">close</i>
-                                              </button>
-                                          </td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                          </div>
-                          <div class="tab-pane" id="settings">
-                              <table class="table">
-                                  <tbody>
-                                      <tr>
-                                          <td>
-                                              <div class="form-check">
-                                                  <label class="form-check-label">
-                                                      <input class="form-check-input" type="checkbox" value="">
-                                                      <span class="form-check-sign">
-                                                          <span class="check"></span>
-                                                      </span>
-                                                  </label>
-                                              </div>
-                                          </td>
-                                          <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                          <td class="td-actions text-right">
-                                              <button mat-raised-button type="button" matTooltip="Edit Task" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">edit</i>
-                                              </button>
-                                              <button mat-raised-button type="button" matTooltip="Remove" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">close</i>
-                                              </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="form-check">
-                                                  <label class="form-check-label">
-                                                      <input class="form-check-input" type="checkbox" value="" checked>
-                                                      <span class="form-check-sign">
-                                                          <span class="check"></span>
-                                                      </span>
-                                                  </label>
-                                              </div>
-                                          </td>
-                                          <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
-                                          </td>
-                                          <td class="td-actions text-right">
-                                              <button mat-raised-button type="button" matTooltip="Edit Task" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">edit</i>
-                                              </button>
-                                              <button mat-raised-button type="button" matTooltip="Remove" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">close</i>
-                                              </button>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="form-check">
-                                                  <label class="form-check-label">
-                                                      <input class="form-check-input" type="checkbox" value="" checked>
-                                                      <span class="form-check-sign">
-                                                          <span class="check"></span>
-                                                      </span>
-                                                  </label>
-                                              </div>
-                                          </td>
-                                          <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                          <td class="td-actions text-right">
-                                              <button mat-raised-button type="button" matTooltip="Edit Task" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">edit</i>
-                                              </button>
-                                              <button mat-raised-button type="button" matTooltip="Remove" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
-                                                  <i class="material-icons">close</i>
-                                              </button>
-                                          </td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-6 col-md-12">
-              <div class="card">
-                  <div class="card-header card-header-warning">
-                      <h4 class="card-title">Employees Stats</h4>
-                      <p class="card-category">New employees on 15th September, 2016</p>
-                  </div>
-                  <div class="card-body table-responsive">
-                      <table class="table table-hover">
-                          <thead class="text-warning">
-                              <th>ID</th>
-                              <th>Name</th>
-                              <th>Salary</th>
-                              <th>Country</th>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                  <td>1</td>
-                                  <td>Dakota Rice</td>
-                                  <td>$36,738</td>
-                                  <td>Niger</td>
-                              </tr>
-                              <tr>
-                                  <td>2</td>
-                                  <td>Minerva Hooper</td>
-                                  <td>$23,789</td>
-                                  <td>Curaçao</td>
-                              </tr>
-                              <tr>
-                                  <td>3</td>
-                                  <td>Sage Rodriguez</td>
-                                  <td>$56,142</td>
-                                  <td>Netherlands</td>
-                              </tr>
-                              <tr>
-                                  <td>4</td>
-                                  <td>Philip Chaney</td>
-                                  <td>$38,735</td>
-                                  <td>Korea, South</td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </div>
-              </div>
-          </div>
-      </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-tabs card-header-primary">
+                      <h3 class="card-title"> Software develoment</h3>
+                    </div>
+                    <div class="card-body">
+                       <h4>OpenKiwi is a leading software development company that specializes in creating innovative and reliable software solutions for businesses of all sizes. With a team of highly skilled developers and designers, OpenKiwi offers a wide range of services that cater to various industries, including healthcare, finance, education, and e-commerce. Their expertise lies in developing custom software applications, web and mobile applications, enterprise software solutions, and cloud-based software. OpenKiwi is dedicated to providing top-quality services and helping businesses enhance their efficiency and productivity through their software solutions. Their commitment to delivering exceptional customer service and providing tailored solutions that meet their clients' unique needs has made them a trusted partner for businesses looking to stay ahead of the competition.</h4>
+                    </div>
+                </div>
+            </div>
+    
+        <div class="col-lg-6 col-md-12">
+            <div class="card">
+                <div class="card-header card-header-tabs card-header-danger">
+                  <h3 class="card-title"> Web hosting</h3>
+                </div>
+                <div class="card-body">
+                   <h4>Domains, web hosting, and storage management are three essential components of building and maintaining a website.
+
+                    A domain name is the unique web address that users type into their browser to access a website. It is important to choose a domain name that is memorable and easy to spell, as it serves as the identity of the website.
+                    
+                    Web hosting refers to the service of providing space on a server to store and serve website files to users who request them. Web hosting providers offer a range of hosting plans, including shared hosting, virtual private servers (VPS), and dedicated servers, which vary in terms of storage capacity, bandwidth, and resources.
+                    
+                    Storage management refers to the process of managing and optimizing the storage of website files and data. This includes tasks such as backing up website data, ensuring adequate storage capacity, and optimizing website speed and performance.
+                    
+                    Together, domains, web hosting, and storage management are critical components of website development and management, and choosing the right providers and strategies can greatly impact a website's success.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <div class="card">
+                <div class="card-header card-header-tabs card-header-success">
+                  <h3 class="card-title"> Professional services</h3>
+                </div>
+                <div class="card-body">
+                   <h4>Professional services refer to a category of services that are offered by experts or professionals with specialized knowledge and skills in a particular field. These services can be provided to businesses, organizations, or individuals and are designed to help them achieve their goals and objectives. Professional services can include a wide range of fields, such as consulting, accounting, legal services, marketing, technology, and more. Professional service providers offer expertise, guidance, and support to their clients to help them solve complex problems, optimize their operations, and achieve their desired outcomes. The main aim of professional services is to provide value to the clients by offering tailored solutions that meet their specific needs and help them achieve success in their respective industries.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="card">
+                <div class="card-header card-header-tabs card-header-warning">
+                  <h3 class="card-title"> Software Integration</h3>
+                </div>
+                <div class="card-body">
+                   <h4>Software integration refers to the process of connecting different software applications or systems to work together seamlessly. This integration can be achieved through a variety of methods, including application programming interfaces (APIs), middleware, and custom software development. The goal of software integration is to streamline processes, increase efficiency, and improve data sharing across different systems. With software integration, businesses can eliminate duplicate data entry, reduce errors, and improve decision-making by having access to accurate and up-to-date information. Additionally, software integration can enable businesses to automate processes, improve customer experience, and reduce costs.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
 </div>
